@@ -1,0 +1,15 @@
+﻿@model List<Dog>
+
+<h1>Dogs page</h1>
+
+<ul>
+    @foreach (var dog in Model)
+    {
+        <il>@dog.Breed</il>
+        <il>@dog.Name</il>
+    }
+</ul>
+
+<hr/>
+
+<a asp-controller="Dogs" asp-action="Create">Add a dog</a>
